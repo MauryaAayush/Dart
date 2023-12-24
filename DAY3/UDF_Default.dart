@@ -2,7 +2,6 @@ void main() {
   print("\n");
   Area(10);
   print("\n");
-  
 }
 
 void Area(int len, [int breadth = 2, int height = 15]) {
