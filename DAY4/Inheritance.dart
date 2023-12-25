@@ -22,7 +22,8 @@ class Animal {
 }
 
 class Lion extends Animal {
-  void king() {
+  void king() 
+  {
     print("Lion is the king of jungle");
   }
 }
