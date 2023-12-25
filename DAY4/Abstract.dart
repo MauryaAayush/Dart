@@ -1,14 +1,14 @@
-abstract class Perosn {
+abstract class Person {
   void display();
 }
 
-class Boy extends Perosn {
+class Boy extends Person {
   void display() {
     print("I am boy");
   }
 }
 
-class Girls extends Perosn {
+class Girls extends Person {
   void display() {
     print("I am a girl");
   }
