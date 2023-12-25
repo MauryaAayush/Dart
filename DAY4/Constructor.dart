@@ -29,6 +29,7 @@ class Hotel {
     print("Name of Hotel is -> $Hotel_Name");
     print("Number of staff in Hotel -> $Hotel_Staff");
     print("Year of estabilished year -> $Hotel_Estabilished");
+    
   }
 
   Hotel() {
