@@ -7,6 +7,7 @@ void main() {
   h1.setter();
   print("\n");
   h1.getter();
+  
 }
 
 class Hotel {
