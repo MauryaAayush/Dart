@@ -1,6 +1,6 @@
-Wap to Insert, Delete & Update operations the element into array.
+//Wap to Insert, Delete & Update operations the element into an array.
 
-import 'dart:io';
+import 'dart: io';
 
 void main() {
   List Elements = [1, 2, 3, 4, 5];
