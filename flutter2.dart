@@ -21,16 +21,15 @@ class MyApp extends StatelessWidget {
       Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.red,
-          title: Center(
-          child : Text('Flutter App',style: TextStyle(
-          color: Colors.white,
+          leading:const Icon(Icons.menu, color: Colors.white,),
+          title:const Text('Flutter App',style: TextStyle(
+          color: Colors.white
           ),
-
-          )),
-          leading: Icon(Icons.menu, color: Colors.white,),
+          ),
+          centerTitle: true,
         ),
-        body: Center(
-          child: Text('     Red & white Group of Institutes\nOne Step in Changing'
+        body: const Center(
+         child: Text('     Red & white Group of Institutes\nOne Step in Changing'
               'Education Chain..', style: TextStyle(color: Colors.red,
           fontSize: 22,fontWeight: FontWeight.w400)),
         ),
