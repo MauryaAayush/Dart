@@ -30,19 +30,39 @@ class MyApp extends StatelessWidget {
           ),
           centerTitle: true,
         ),
-        body: const Center(
-          child: Text('Red & White', style: TextStyle(
-            color: Colors.red,
-            fontWeight: FontWeight.bold,
-            fontSize: 60,
-            decoration: TextDecoration.underline,
-            decorationColor: Colors.red,
-            decorationThickness: 1.15,
-          ),
-            semanticsLabel: 'Multimedia Education',
+        body: Center(
+          child: RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                TextSpan(
+                  text: 'Red & White\n',
+                  style: TextStyle(color: Colors.red,fontSize: 65,
+                  decoration: TextDecoration.underline,
+                  decorationColor: Colors.red,
+                  decorationThickness: 1.14,
+                  fontWeight: FontWeight.bold,
+                  ),
+                ),
+                TextSpan(
+                  text: '    Multimedia Education\n',
+                  style: TextStyle(color: Colors.red,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
 
-          ),
+                  ),
 
+                ),
+                TextSpan(
+                  text: '   Shaping "skill"  for "scalling" higher...!!! ',
+                  style: TextStyle(color: Colors.red,
+                  fontSize: 19,
+                  fontWeight: FontWeight.w600,
+                  ),
+
+                ),
+              ]
+            ),
+          ),
 
         ),
       ),
@@ -51,3 +71,37 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// Text.rich(
+// TextSpan(
+// text: 'Red & White\n',
+// style: TextStyle(
+// color: Colors.red,
+// fontSize: 65,
+// fontWeight: FontWeight.bold,
+// decoration : TextDecoration.underline,
+// decorationColor: Colors.red,
+// decorationThickness: 1.14,
+// ),
+// children: <TextSpan>[
+// TextSpan(
+// text: '    Multimedia Education\n',
+// style: TextStyle(
+// decoration: TextDecoration.none,
+// fontWeight: FontWeight.bold,
+// fontSize: 30,
+//
+// )
+// )
+// TextSpan()
