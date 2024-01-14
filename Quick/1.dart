@@ -1,4 +1,4 @@
-Wap to print all negative elements in an array.
+// Wap to print all negative elements in an array.
 
 import 'dart:io';
 
