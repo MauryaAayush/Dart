@@ -1,3 +1,4 @@
+
 import 'dart:io';
 
 int sum(int a, int b) {
@@ -40,5 +41,7 @@ void main() {
       print(mul(a, b));
     case 4:
       print(div(a, b));
+     default:
+      print("Enter the right number");
   }
 }
