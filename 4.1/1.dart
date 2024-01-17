@@ -1,5 +1,4 @@
 void main() {
-  
   print(cube(a: 3));
 }
 
