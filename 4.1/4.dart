@@ -39,7 +39,7 @@ double calculate(
           occupations3 +
           occupations4 +
           occupations5) /
-      500 * 100;
+      5;
 
   return result;
 }
