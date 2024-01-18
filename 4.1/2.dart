@@ -13,11 +13,13 @@ void main() {
   print("Old name List : $name");
   print("New name List : $FinalName");
   print("\n\n");
-  print(oneLineUnique(name: name).toList());
+  print("By the one Line function : ${oneLineUnique(name: name).toList()}");
 }
 
 List<String> uniqueNameList(List<String> name) {
+  
   Set<String> UniqueName = Set.from(name);
+
   List<String> Final = UniqueName.toList();
 
   return Final;
