@@ -1,59 +1,54 @@
 import 'dart:io';
 
-class Student {
-  String name = '';
-  int rollNumber = 0;
-  double marks = 0.0;
+void main() {
+  stdout.write("Enter the number of Students : ");
+  int a = int.parse(stdin.readLineSync()!);
 
-  // Setter methods to initialize student details
-  void setName(String newName) {
-    name = newName;
-  }
+  List<Student> Students = [];
 
-  void setRollNumber(int newRollNumber) {
-    rollNumber = newRollNumber;
-  }
+  for (int i = 1; i <= a; i++) {
+    print("Enter the detail of student $i");
 
-  void setMarks(double newMarks) {
-    marks = newMarks;
-  }
+    Student s1 = Student();
 
-  // Method to print student details
-  void printDetails() {
-    print('Name: $name, Roll Number: $rollNumber, Marks: $marks');
+    stdout.write("Name : ");
+
+    stdout.write("Roll no : ");
+    s1.myrollno(int.parse(stdin.readLineSync()!));
+
+    stdout.write("Age : ");
+    s1.myage(int.parse(stdin.readLineSync()!));
+
+    stdout.write("Makrs : ");
+    s1.mymarks(int.parse(stdin.readLineSync()!));
+
+    Students.add(s1);
   }
 }
 
-void main() {
-  // Get the number of students (N)
-  print('Enter the number of students (N):');
-  int n = int.parse(stdin.readLineSync()!);
+class Student {
+  String name = '';
+  int rollNum = 0;
+  int age = 0;
+  int marks = 0;
 
-  // Create an array of Student objects
-  List<Student> students = [];
-
-  // Input details for each student and store in the array
-  for (int i = 0; i < n; i++) {
-    print('\nEnter details for Student ${i + 1}:');
-    
-    Student student = Student();
-
-    print('Name:');
-    student.setName(stdin.readLineSync()!);
-
-    print('Roll Number:');
-    student.setRollNumber(int.parse(stdin.readLineSync()!));
-
-    print('Marks:');
-    student.setMarks(double.parse(stdin.readLineSync()!));
-
-    // Add the student to the array
-    students.add(student);
+  void Myname(String NewName) {
+    name = NewName;
   }
 
-  // Print details of all students
-  print('\nDetails of all students:');
-  for (Student student in students) {
-    student.printDetails();
+  void myrollno(int NewRollNo) {
+    rollNum = NewRollNo;
+  }
+
+  void myage(int NewAge) {
+    age = NewAge;
+  }
+
+  void mymarks(int NewMarks) {
+    marks = NewMarks;
+  }
+
+  void output() {
+    print("Name : $name, Roll no : $rollNum, Age : $age, Marks : $marks");
   }
 }
