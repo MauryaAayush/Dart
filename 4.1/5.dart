@@ -6,8 +6,9 @@ void main() {
 
   stdout.write("Enter the value of B : ");
   int b = int.parse(stdin.readLineSync()!);
+  
 
-  print("The sum of $a + $b = ${a+b}");
+  print("The sum of $a + $b = ${a + b}");
 }
 
-int sum(int a, int b) => a + b;
+int sum([int a = 0, int b = 0]) => a + b;
