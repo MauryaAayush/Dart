@@ -1,10 +1,10 @@
 import 'dart:io';
 
 void main() {
-  stdout.write("Enter the number of Students : ");
-  int a = int.parse(stdin.readLineSync()!);
+    stdout.write("Enter the number of Students : ");
+    int a = int.parse(stdin.readLineSync()!);
 
-  List<Student> Students = [];
+    List<Student> Students = [];
 
   for (int i = 1; i <= a; i++) {
     print("Enter the detail of student $i");
