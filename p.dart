@@ -5,14 +5,14 @@ void main() {
   int num = 1;
   int y = 1;
 
-  // stdout.write("Ente rthe number : ");
-  // n = int.parse(stdin.readLineSync()!);
+  stdout.write("Ente rthe number : ");
+  n = int.parse(stdin.readLineSync()!);
 
-  for (int i = 1; i <= 10; i++) {
+  for (int i = 1; i <= n; i++) {
     for (int j = 1; j < i; j++) {
       stdout.write("   ");
     }
-    for (int j = i; j <= 10; j++) {
+    for (int j = i; j <= n; j++) {
       stdout.write(" $num");
       if (num >= 1 && num <= 9) {
         stdout.write(" ");
