@@ -19,6 +19,5 @@ class Convert {
     print("New Feet is -> ${feet + Remain_Inches}");
     print("New Inches is -> $Main_inches");
 
-    
   }
 }
