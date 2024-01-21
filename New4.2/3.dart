@@ -69,4 +69,8 @@ void main() {
 
 itemRecords.sort((a, b) => a.itemNumber.compareTo(b.itemNumber));
 
+    print("\nAll Records in Ascending Order (by Item Number):");
+  for (SuperMarket record in itemRecords) {
+    record.display();
+  }
 }
