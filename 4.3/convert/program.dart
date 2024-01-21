@@ -1,4 +1,7 @@
-class Convert
-{
+class Convert {
+  late int inches;
+  late int feet;
+
+
   
 }
