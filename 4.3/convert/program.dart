@@ -16,8 +16,9 @@ class Convert {
     int Remain_Inches = inches ~/ 12;
     int Main_inches = inches % 12;
 
-    print("New Feet is ${feet + Remain_Inches}");
-    print("New Inches is $Main_inches");
+    print("New Feet is -> ${feet + Remain_Inches}");
+    print("New Inches is -> $Main_inches");
+
+    
   }
 }
-  
