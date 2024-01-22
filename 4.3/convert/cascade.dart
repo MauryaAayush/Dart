@@ -1,3 +1,6 @@
 class Cascade {
-  int name = "Aayush";
+  late String name;
+  late int roll_no;
+
+  
 }
