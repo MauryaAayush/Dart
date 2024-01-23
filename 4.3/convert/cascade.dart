@@ -23,6 +23,6 @@ class Cascade {
   }
 
   Cascade.para(String Surname) {
-    print(Surname);
+    print("This is a $Surname");
   }
 }
