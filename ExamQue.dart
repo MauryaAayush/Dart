@@ -1,4 +1,9 @@
-void main()
+class Agecal
 {
   
+}
+
+void main()
+{
+
 }
