@@ -1,9 +1,5 @@
-class Agecal
-{
-  
-}
+class Agecal {}
 
-void main()
-{
-
+void main() {
+  print("Under processing");
 }
