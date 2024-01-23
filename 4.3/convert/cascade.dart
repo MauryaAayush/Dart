@@ -22,7 +22,8 @@ class Cascade {
     print("This one is modified and simple version");
   }
 
-  Cascade.para(String Surname) {
-    print("This is a $Surname");
+  Cascade.para(String alpha) {
+
+    print("This is a $alpha");
   }
 }
