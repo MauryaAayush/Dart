@@ -58,24 +58,25 @@ class Agecal {
 
 void main() {
   print("\n--------- Lets start -----------");
-  List<Agecal> users = [];
+  List<Agecal> user = [];
 
   for (var i = 0; i < 3; i++) {
-    print("\nEnter details for User ${i + 1}:");
-    Agecal user = Agecal();
-    user..info();
+    print("\nEnter details for a1 : ${i + 1}:");
+    Agecal a1 = Agecal();
+    a1.info();
 
-    while (user.check() != 1) {
-      print("User details are not valid. Please enter valid information.");
-      user..info();
+    while (a1.check() != 1) {
+      print("a1 details are not valid. Please enter valid information.");
+      // i--;
+      a1.info();
     }
 
-    users.add(user);
+    user.add(a1);
   }
 
   print("\nHere is the result\n");
-  for (var user in users) {
-      user.get();
+  for (var a1 in user) {
+      a1.get();
       print("\n--------- Done -----------\n");
   }
 }
