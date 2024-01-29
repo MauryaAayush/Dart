@@ -1,11 +1,7 @@
 import 'check.dart';
 
 void main() {
-  // int Id;
-  // int age;
-  // int Phone;
-  // String Surname;
-
+ 
   List m1 = [
     {
       'Id': 101,
