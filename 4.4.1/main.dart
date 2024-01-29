@@ -430,16 +430,16 @@ void main() {
 
     Bank b1 = Bank.fromMap(m1[i]);
 
-    print("isActive : ${b1.isActive}");
-    print("balance : ${b1.balance}");
-    print("${b1.age}");
-    print("${b1.eyeColor}");
-    print("${b1.name}");
-    print("${b1.gender}");
-    print("${b1.company}");
-    print("${b1.email}");
-    print("${b1.phone}");
-    print("${b1.address}");
+    print("Is Account Active : ${b1.isActive}");
+    print("Balance : ${b1.balance}");
+    print("Age : ${b1.age}");
+    print("EyeColor : ${b1.eyeColor}");
+    print("Name : ${b1.name}");
+    print("Gender : ${b1.gender}");
+    print("Company : ${b1.company}");
+    print("Email : ${b1.email}");
+    print("Phone : ${b1.phone}");
+    print("Address : ${b1.address}");
 
     print("\n ");
   }
