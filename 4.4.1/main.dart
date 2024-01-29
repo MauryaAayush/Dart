@@ -428,13 +428,19 @@ void main() {
 
   
   for (var i = 0; i < 2; i++) {
+    
     Bank b1 = Bank.fromMap(m1[i]);
 
-    print(b1.Id);
+    print(b1.isActive);
+    print(b1.balance);
     print(b1.age);
-    print(b1.Phone);
+    print(b1.eyeColor);
     print(b1.name);
-    print(b1.Surname);
+    print(b1.gender);
+    print(b1.company);
+    print(b1.email);
+    print(b1.phone);
+    print(b1.address);
     
   }
 
