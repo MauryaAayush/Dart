@@ -27,7 +27,6 @@ class Bank {
 
     Bank p1 = Bank._temp(isActive, age, balance, eyeColor, name, gender,
         company, email, phone, address);
-        
 
     return p1;
   }
