@@ -4,10 +4,7 @@ void main() {
  
 
   try {
-    // // Read user input from the console
-    // String? userInput = stdin.readLineSync();
-
-    // Convert the input to an integer
+  
      stdout.write("Enter an integer : ");
     int result = int.parse(stdin.readLineSync()!);
 
