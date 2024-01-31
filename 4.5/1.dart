@@ -3,7 +3,6 @@ import 'dart:io';
 void main() {
   
   try {
-  
   int num1, num2;
   stdout.write("enter the value of number 1:");
   num1 = int.parse(stdin.readLineSync()!);

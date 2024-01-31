@@ -12,7 +12,9 @@ void main() {
 
     int ans = num1 ~/ num2;
     print("Answer: $ans");
-  } catch (e) {
+  }
+   catch (e) 
+  {
     print("You have enter $num2 which is not divisible with $num1 ");
   }
 }
