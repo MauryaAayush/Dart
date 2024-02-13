@@ -1,31 +1,32 @@
 import 'dart:io';
 
 void main() {
-  int n;
-  int num = 1;
-  int y = 1;
+  int x = 1;
+  int p = 9;
+  int q = -2;
 
-  stdout.write("Ente rthe number : ");
-  n = int.parse(stdin.readLineSync()!);
-
-  for (int i = 1; i <= n; i++) {
-    for (int j = 1; j < i; j++) {
-      stdout.write("   ");
-    }
-    for (int j = i; j <= n; j++) {
-      stdout.write(" $num");
-      if (num >= 1 && num <= 9) {
-        stdout.write(" ");
+  for (var i = 1; i <= 5; i++) {
+    x = i;
+    for (var j = 1; j <= i; j++) {
+      if (j == 1) {
+        stdout.write(" $x ");
+        for (var k = 1; k < x; k++) {
+          p -= 2;
+          q += 2;
+        }
+      } else if (j == 5) {
+        x += 2;
+        stdout.write("$x");
+      } else if (j % 2 == 0) {
+        x += p;
+        stdout.write(" $x ");
+      } else {
+        x += q;
+        stdout.write(" $x ");
       }
-      num = num + j;
     }
-
-    for (int j = 9; j >= i; j--) {
-      stdout.write(" $num");
-      num = num + j;
-    }
-    y += i;
-    num = i + y;
+     p = 9;
+     q = -2;
     print("");
   }
 }
