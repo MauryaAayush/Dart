@@ -28,7 +28,8 @@ void main() {
       case 2:
         print("\n! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ");
 
-        for (int i = 0; i < customerList.length; i++) {
+        for (int i = 0; i < customerList.length; i++) 
+        {
           customerList[i]['customerInfo'].Output();
           All_Product.Cart_Data(customerList[i]['cartData']);
         }
