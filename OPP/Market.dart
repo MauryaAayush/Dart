@@ -12,12 +12,12 @@ void main() {
   while (true) {
     switch (choice) {
       case 1:
-        Customer customerData = new Customer();
-        customerData.Input();
+        Customer c1 = new Customer();
+        c1.Input();
         p1 = new All_Product();
 
         Map map = {};
-        map['customerInfo'] = customerData;
+        map['customerInfo'] = c1;
         List list = p1.Materials();
         map['cartData'] = list;
 
@@ -28,8 +28,7 @@ void main() {
       case 2:
         print("\n! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ");
 
-        for (int i = 0; i < customerList.length; i++) 
-        {
+        for (int i = 0; i < customerList.length; i++) {
           customerList[i]['customerInfo'].Output();
           All_Product.Cart_Data(customerList[i]['cartData']);
         }
