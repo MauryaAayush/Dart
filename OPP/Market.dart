@@ -28,7 +28,8 @@ void main() {
       case 2:
         print("\n! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ");
 
-        for (int i = 0; i < customerList.length; i++) {
+        for (int i = 0; i < customerList.length; i++) 
+        {
           customerList[i]['customerInfo'].Output();
           All_Product.Cart_Data(customerList[i]['cartData']);
         }
@@ -39,11 +40,12 @@ void main() {
         bool found = false;
 
         print("\n- - - - - - - - - - - - - - - - - -");
-        stdout.write(">> Enter cutomer id for search data : ");
+        stdout.write("Enter cutomer id  : ");
         searchId = int.parse(stdin.readLineSync()!);
         print("- - - - - - - - - - - - - - - - - -");
 
-        for (int i = 0; i < customerList.length; i++) {
+        for (int i = 0; i < customerList.length; i++) 
+        {
           if (searchId == customerList[i]['customerInfo'].TakeId()) {
             found = true;
             customerList[i]['customerInfo'].Output();
