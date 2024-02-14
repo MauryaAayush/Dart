@@ -12,12 +12,9 @@ void main() {
   while (true) {
     switch (choice) {
       case 1:
-        //getting user info
         Customer customerData = new Customer();
         customerData.Input();
         p1 = new All_Product();
-
-        //getting cart details
 
         Map map = {};
         map['customerInfo'] = customerData;
@@ -29,10 +26,10 @@ void main() {
         break;
 
       case 2:
-        print("\n# # # # # # # # # # # # # # # # # #");
+        print("\n! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ");
 
         for (int i = 0; i < customerList.length; i++) {
-          customerList[i]['customerInfo'].getter();
+          customerList[i]['customerInfo'].Output();
           All_Product.Cart_Data(customerList[i]['cartData']);
         }
         break;
@@ -47,9 +44,9 @@ void main() {
         print("- - - - - - - - - - - - - - - - - -");
 
         for (int i = 0; i < customerList.length; i++) {
-          if (searchId == customerList[i]['customerInfo'].getId()) {
+          if (searchId == customerList[i]['customerInfo'].TakeId()) {
             found = true;
-            customerList[i]['customerInfo'].getter();
+            customerList[i]['customerInfo'].Output();
             All_Product.Cart_Data(customerList[i]['cartData']);
           }
         }
@@ -98,15 +95,14 @@ class All_Product {
     print("*            |   All Products   |         *");
     print("*            --------------------         *");
     print("*                                         *");
-    print("*                                         *");
 
     for (int i = 0; i < ProductList.length; i++) {
       print(
-          "*   Press ${ProductList[i]['productId']} for ${ProductList[i]['productName']} -> ${ProductList[i]['price']}Rs\t*");
+          "*            ${ProductList[i]['Pr.id']}.${ProductList[i]['Pr.name']} (${ProductList[i]['Price']}Rs)\t\t  *");
     }
-    print("*                                       *");
-    print("*                                       *");
-    print("* * * * * * * * * * * * * * * * * * * * *\n");
+    print("*                                         *");
+    print("*                                         *");
+    print("* * * * * * * * * * * * * * * * * * * * * *\n");
 
     print("\n- - - - - - - - - - - - - - - - - -");
     stdout.write("Enter your product : ");
@@ -167,7 +163,7 @@ class All_Product {
     print("\n Discount Amount ->  $Discount_Amount");
     print("\n Payable Amount ->  $Payable_Amount");
 
-    print("\n# # # # # # # # # # # # # # # # # #\n");
+    print("\n - * - * - * - * - * - * - * - * - * - * - * - *\n");
   }
 }
 
@@ -179,13 +175,13 @@ class Customer extends All_Product {
   Input() {
     print("\n- - - - - - - - - - - - - - - - - -");
 
-    stdout.write(">> Enter The Customer Id : ");
+    stdout.write("Enter The Customer Id : ");
     _Id = int.parse(stdin.readLineSync()!);
 
-    stdout.write(">> Enter customer name : ");
+    stdout.write("Enter customer name : ");
     _Name = stdin.readLineSync()!;
 
-    stdout.write(">> Enter customer1 contact number : ");
+    stdout.write("Enter customer contact number : ");
     _Contact_no = stdin.readLineSync()!;
 
     print("- - - - - - - - - - - - - - - - - -\n");
@@ -218,8 +214,7 @@ class Market {
     print("*                                           *");
     print("* * * * * * * * * * * * * * * * * * * * * * *\n");
 
-    print("\n- - - - - - - - - - - - - - - - - -");
-    stdout.write(">> Enter your choice : ");
+    stdout.write("Enter your choice : ");
     choice = int.parse(stdin.readLineSync()!);
     print("- - - - - - - - - - - - - - - - - -");
 
